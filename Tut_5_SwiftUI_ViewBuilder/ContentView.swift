@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            BlueCicle{
+                Text("Some text here")
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(width: 40, height: 40)
+            }
+            
+            BlueCicle{
+                Text("Another example")
+            }
+        }
     }
 }
 
